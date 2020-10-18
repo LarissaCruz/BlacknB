@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import {Conteudo, PrimeiraColuna ,SencondColum, DivParagraph, DivTabela} from './styles';
+import {Content, FirstColumn ,SencondColum, DivParagraph, DivSchedules} from './styles';
 import Comment from '../Comment/Comment';
 import Images from '../Images/Images';
-import Formulario from './formulario'
+import Form from './formulario'
 
 function Description(props) {
     return (
         <>
             {props.company.map(company => (
-                <Conteudo>
-                    <PrimeiraColuna spacing="2rem">
+                <Content>
+                    <FirstColumn spacing="2rem">
                         <Images url={company.image.url} />
                         <Comment />
-                    </PrimeiraColuna>
+                    </FirstColumn>
 
                     <SencondColum key={company.id} >
                         <h3>Sobre:</h3>
@@ -31,15 +31,12 @@ function Description(props) {
                         </DivParagraph>
 
                         <h3>Horário de Abertura:</h3>
-
-
                         {company.schedules.map(schedules => (
-                            <DivTabela key={schedules.id}>
+                            <DivSchedules key={schedules.id}>
                                 <p> {(schedules.day)}</p>
                                 <p> {(schedules.start)}-{(schedules.end)}</p>
-                            </DivTabela>
+                            </DivSchedules>
                         ))}
-
                         <DivParagraph>
                             <h3>Endereço</h3>
                             <p>{company?.address?.street},{company?.address?.number}{company?.address?.district}{company?.address?.country}</p>
@@ -47,10 +44,10 @@ function Description(props) {
                         </DivParagraph>
                         <DivParagraph>
                             <h3>Perguntas e respostas</h3>
-                            <Formulario questions={company.questions} modifiedData ={props.modifiedData} setRecord ={props.setRecord} changesRecord={props.changesRecord}/>
+                            <Form questions={company.questions} modifiedData ={props.modifiedData} setRecord ={props.setRecord} changesRecord={props.changesRecord}/>
                         </DivParagraph>
                     </SencondColum>
-                </Conteudo>
+                </Content>
             ))}
         </>
     );

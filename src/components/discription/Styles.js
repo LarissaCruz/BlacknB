@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-export const Conteudo = styled.div`
+export const Content = styled.div`
     grid-template-columns: 5fr 6fr;
     display: grid;
     gap: 2rem;
@@ -8,7 +8,7 @@ export const Conteudo = styled.div`
         gap: 2rem;     
    }
 `;
-export const PrimeiraColuna = styled.div`
+export const FirstColumn = styled.div`
     >button {
         cursor: pointer;
         border: none;
@@ -49,10 +49,10 @@ export const DivParagraph = styled.span`
             color:initial;
         }
     }
-    >form div.formulario {
+    >form div.form {
         display: flex;
     }
-    >form div.formulario input {
+    >form div.form input {
         border: 0.5px solid rgb(59, 46, 29);
         border-radius: 5px;
         font-family: Montserrat;
@@ -61,7 +61,7 @@ export const DivParagraph = styled.span`
         padding: 0.75rem;
         margin: 0px 1rem 0px 0px;
     }
-    >form div.formulario button {
+    >form div.form button {
         
         padding: 0.75rem 1.75rem;
         border-radius: 5px;
@@ -78,7 +78,7 @@ export const DivParagraph = styled.span`
     }
    
 `;
-export const DivTabela = styled.span`
+export const DivSchedules = styled.span`
     max-width: 250px;
     justify-content: space-between;
     display: flex;

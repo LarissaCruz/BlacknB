@@ -12,7 +12,7 @@ export const ConteinerModal= styled.div`
     border-radius: 5px;
 
 `;
-export const DivFormulario= styled.div`
+export const DivForm= styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -59,7 +59,7 @@ export const ButtonConteiner= styled.div`
 `;
 
 
-export const DivImagem= styled.div`
+export const DivImage= styled.div`
     height: 100vh;
     width: 100%;
     max-height: 150px;

@@ -42,7 +42,7 @@ export const LinkLogo = styled.a`
     }
 `;
 
-export const DivOpicao = styled.div`
+export const DivOption = styled.div`
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -53,11 +53,9 @@ export const DivOpicao = styled.div`
     }
    
 `;
-export const ButtonMenu = styled.button`
-    
-`;
 
-export const BtnLocaliza = styled.button`
+
+export const BtnMaps = styled.button`
     display: flex;
     border: none;
     background: none;
@@ -66,12 +64,12 @@ export const BtnLocaliza = styled.button`
     padding: 0.5rem 0px; 
 `;
 
-export const IconeLocaliza = styled.div`
+export const IconeBtn = styled.div`
     padding: 0.5rem 0px;
     margin: 0px 0.5rem 0px 0px;
 `;
 
-export const Texto = styled.p`
+export const Text = styled.p`
     margin-right: 0.5rem;
 `;
 

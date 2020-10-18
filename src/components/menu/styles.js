@@ -1,6 +1,6 @@
 import styled,{css} from 'styled-components';
 
-export const BarraMenu = styled.div`
+export const BarMenu = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -17,9 +17,9 @@ export const BtnVoltar = styled.button`
     background-color: rgb(255, 255, 255);
     color: rgb(43, 43, 43);
 `;
-export const BarraInfo = styled.div`
+export const BarInfo = styled.div`
 `;
-export const Titulo = styled.div`
+export const Title = styled.div`
 >h1{
     margin-bottom: 0.25rem;
     margin-top: 0.25rem;

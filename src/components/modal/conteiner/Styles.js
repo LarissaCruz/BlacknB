@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-export const Formulario = styled.form`
+export const Form = styled.form`
     max-width: 350px;
     padding: 1rem 0px 1.5rem;
     >form div{
@@ -10,15 +10,15 @@ export const Formulario = styled.form`
         margin: unset;
     }
 `;
-export const DivNota  = styled.div`
+export const DivNote  = styled.div`
     >h3{
         margin-bottom: 0.25rem;
     }
 `;
-export const Iconvaliacao = styled.div`
+export const IconStart = styled.div`
     margin-bottom: 0.5rem;
 `;
-export const DivDescricao = styled.div`
+export const DivDescription = styled.div`
     margin-bottom: 0.5rem;
     >input{
         border: 0.5px solid rgb(59, 46, 29);
@@ -39,7 +39,7 @@ export const TextLabel = styled.div`
     margin-bottom: 0.25rem;
     opacity: 1;
 `;
-export const DivBarraMenu = styled.div`
+export const DivBarMenu = styled.div`
     display: block;
     width: 100%;
     padding: 0 var(--ck-spacing-small);

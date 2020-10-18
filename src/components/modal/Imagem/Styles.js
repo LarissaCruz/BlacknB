@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-export const FundoModal  = styled.div`
+export const BottomModal  = styled.div`
     display: flex;
     position: fixed;
     top: 0px;
@@ -12,7 +12,7 @@ export const FundoModal  = styled.div`
     justify-content: center
 `;
 
-export const ModalConteudo = styled.div`
+export const ModalContent = styled.div`
 display: flex;
 flex-direction: column-reverse;
  

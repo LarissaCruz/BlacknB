@@ -1,20 +1,16 @@
-import { Formulario, DivNota, Iconvaliacao, DivDescricao, TextLabel, TextArea, DivBarraMenu, BtnMenu, Button } from './styles'
-
+import { Form, DivNote, IconStart, DivDescription, TextLabel, TextArea, DivBarMenu, BtnMenu, Button } from './styles'
+import StartRating from '../../startRating/StartRating'
 function ModalAvalia() {
 
     return (
-        <Formulario>
-            <DivNota>
+        <Form>
+            <DivNote>
                 <h3>Sua Nota(de 1 a 5 estrelas:)</h3>
-                <Iconvaliacao>
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.956 5.744a.8.8 0 00-.695-.54l-4.56-.363L8.728.473A.798.798 0 007.27.472L5.297 4.84l-4.56.362a.8.8 0 00-.495 1.37l3.37 3.286-1.192 5.16a.8.8 0 001.224.846l4.355-2.904 4.355 2.904a.8.8 0 001.214-.885l-1.463-5.119 3.628-3.265a.801.801 0 00.223-.852z" fill="rgb(191, 133, 20)"></path></svg>
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.956 5.744a.8.8 0 00-.695-.54l-4.56-.363L8.728.473A.798.798 0 007.27.472L5.297 4.84l-4.56.362a.8.8 0 00-.495 1.37l3.37 3.286-1.192 5.16a.8.8 0 001.224.846l4.355-2.904 4.355 2.904a.8.8 0 001.214-.885l-1.463-5.119 3.628-3.265a.801.801 0 00.223-.852z" fill="rgb(191, 133, 20)"></path></svg>
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.956 5.744a.8.8 0 00-.695-.54l-4.56-.363L8.728.473A.798.798 0 007.27.472L5.297 4.84l-4.56.362a.8.8 0 00-.495 1.37l3.37 3.286-1.192 5.16a.8.8 0 001.224.846l4.355-2.904 4.355 2.904a.8.8 0 001.214-.885l-1.463-5.119 3.628-3.265a.801.801 0 00.223-.852z" fill="rgb(191, 133, 20)"></path></svg>
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.956 5.744a.8.8 0 00-.695-.54l-4.56-.363L8.728.473A.798.798 0 007.27.472L5.297 4.84l-4.56.362a.8.8 0 00-.495 1.37l3.37 3.286-1.192 5.16a.8.8 0 001.224.846l4.355-2.904 4.355 2.904a.8.8 0 001.214-.885l-1.463-5.119 3.628-3.265a.801.801 0 00.223-.852z" fill="rgb(191, 133, 20)"></path></svg>
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.956 5.744a.8.8 0 00-.695-.54l-4.56-.363L8.728.473A.798.798 0 007.27.472L5.297 4.84l-4.56.362a.8.8 0 00-.495 1.37l3.37 3.286-1.192 5.16a.8.8 0 001.224.846l4.355-2.904 4.355 2.904a.8.8 0 001.214-.885l-1.463-5.119 3.628-3.265a.801.801 0 00.223-.852z" fill="rgb(191, 133, 20)"></path></svg>
-                </Iconvaliacao>
-            </DivNota>
-            <DivDescricao>
+                <IconStart>
+                    <StartRating />
+                </IconStart>
+            </DivNote>
+            <DivDescription>
                 <TextLabel>
                     Titulo
                 </TextLabel>
@@ -22,7 +18,7 @@ function ModalAvalia() {
                 <TextLabel>
                     Descricão
                 </TextLabel>
-                <DivBarraMenu>
+                <DivBarMenu>
                     <BtnMenu>
                         <svg class="ck ck-icon ck-button__icon" width="22" height="22" viewBox="0 0 20 20"><path d="M10.187 17H5.773c-.637 0-1.092-.138-1.364-.415-.273-.277-.409-.718-.409-1.323V4.738c0-.617.14-1.062.419-1.332.279-.27.73-.406 1.354-.406h4.68c.69 0 1.288.041 1.793.124.506.083.96.242 1.36.478.341.197.644.447.906.75a3.262 3.262 0 0 1 .808 2.162c0 1.401-.722 2.426-2.167 3.075C15.05 10.175 16 11.315 16 13.01a3.756 3.756 0 0 1-2.296 3.504 6.1 6.1 0 0 1-1.517.377c-.571.073-1.238.11-2 .11zm-.217-6.217H7v4.087h3.069c1.977 0 2.965-.69 2.965-2.072 0-.707-.256-1.22-.768-1.537-.512-.319-1.277-.478-2.296-.478zM7 5.13v3.619h2.606c.729 0 1.292-.067 1.69-.2a1.6 1.6 0 0 0 .91-.765c.165-.267.247-.566.247-.897 0-.707-.26-1.176-.778-1.409-.519-.232-1.31-.348-2.375-.348H7z"></path></svg>
                     </BtnMenu>
@@ -41,15 +37,15 @@ function ModalAvalia() {
                     <BtnMenu >
                         <svg class="ck ck-icon ck-button__icon" width="22" height="22" viewBox="0 0 20 20"><path d="M7 5.75c0 .414.336.75.75.75h9.5a.75.75 0 1 0 0-1.5h-9.5a.75.75 0 0 0-.75.75zM3.5 3v5H2V3.7H1v-1h2.5V3zM.343 17.857l2.59-3.257H2.92a.6.6 0 1 0-1.04 0H.302a2 2 0 1 1 3.995 0h-.001c-.048.405-.16.734-.333.988-.175.254-.59.692-1.244 1.312H4.3v1h-4l.043-.043zM7 14.75a.75.75 0 0 1 .75-.75h9.5a.75.75 0 1 1 0 1.5h-9.5a.75.75 0 0 1-.75-.75z"></path></svg>
                     </BtnMenu>
-                </DivBarraMenu>
+                </DivBarMenu>
                 <TextArea>
                     <p></p>
                 </TextArea>
-            </DivDescricao>
+            </DivDescription>
             <Button>Avaliar</Button>
             <Button color="Claro">Cancelar</Button>
 
-        </Formulario>
+        </Form>
     );
 }
 

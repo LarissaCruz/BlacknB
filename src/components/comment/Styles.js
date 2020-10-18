@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-export const ButtonAvalia = styled.button`
+export const ButtonModal = styled.button`
     padding: 0.75rem 0px;
     border: none;
     font-weight: bold;
@@ -10,7 +10,7 @@ export const ButtonAvalia = styled.button`
     cursor: pointer;
     margin-bottom: 1rem;
 `;
-export const DivAvaliacao = styled.div`
+export const DivStar = styled.div`
     >span{
         display: inline;
     }

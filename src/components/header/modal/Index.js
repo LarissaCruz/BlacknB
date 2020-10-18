@@ -1,27 +1,27 @@
 import { TextLabel, Button } from '../../modal/conteiner/Styles';
-import { FundoModal } from '../../modal/imagem/Styles';
-import { ConteinerModal, DivFormulario, DivImagem, ButtonConteiner, DivButton } from './styles';
+import { BottomModal } from '../../modal/imagem/Styles';
+import { ConteinerModal, DivForm, DivImage, ButtonConteiner, DivButton } from './styles';
 import React from 'react'
 const ModalLocalizacao = ({ onClose = () =>{},children})=>{
     return (
-        <FundoModal>
+        <BottomModal>
             <ConteinerModal>
-                <DivFormulario>
+                <DivForm>
                     <h2>Localização</h2>
                     <ButtonConteiner>Detectar localização atual</ButtonConteiner>
                     <TextLabel>Escolher outra localização:</TextLabel>
                     <input type="text" placeholder="Search for location..." ></input>
-                    <DivImagem>
+                    <DivImage>
                         <img src="/images/Mapa.jpg" ></img>
-                    </DivImagem>
+                    </DivImage>
                     <ButtonConteiner variante="color">Resetar localização</ButtonConteiner>
-                </DivFormulario>
+                </DivForm>
                 <DivButton>
                     <Button color="Claro"onClick={onClose}> Cancelar</Button>
                     <Button>Salvar</Button>
                 </DivButton>
             </ConteinerModal>
-        </FundoModal>
+        </BottomModal>
     )
 }
 export default ModalLocalizacao;

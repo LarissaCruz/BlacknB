@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const DivGrupoImagem = styled.div`
+export const DivGroupImage = styled.div`
     display: flex;
     justify-content: center;
     width: 100%;
